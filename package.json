@@ -1,0 +1,40 @@
+{
+  "name": "stacks-veridex-agent-nexus",
+  "version": "0.1.0",
+  "description": "S-VAN: Secure, autonomous agent payments for the Stacks ecosystem via x402-stacks and Veridex Agent SDK.",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "server": "tsx src/server.ts",
+    "demo": "tsx src/demo.ts",
+    "test": "vitest --run"
+  },
+  "keywords": [
+    "stacks",
+    "x402",
+    "agent",
+    "veridex",
+    "agentic-payments"
+  ],
+  "author": "Veridex Team",
+  "license": "MIT",
+  "dependencies": {
+    "@veridex/agentic-payments": "file:../../packages/agent-sdk",
+    "@veridex/sdk": "file:../../packages/sdk",
+    "@stacks/transactions": "^7.3.0",
+    "@stacks/network": "^7.2.0",
+    "dotenv": "^16.4.0",
+    "express": "^5.1.0",
+    "ws": "^8.18.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.18.1",
+    "@types/cors": "^2.8.17",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
